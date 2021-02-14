@@ -40,3 +40,19 @@ word-spacing: 2px;
   margin: 0 auto;
   float: right;
 }
+
+.mapboxgl-marker:hover {
+  cursor: pointer;
+}
+
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  width:300px;
+  box-shadow: 3px 3px 2px #8B5D33;
+}
