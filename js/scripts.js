@@ -41,8 +41,10 @@ var divingData = [
   },
   {
     point: [34.503078,28.470414],
-    name: 'Napolean Reef',
-    title:''
+    name: 'Napoleon Reef',
+    title:'',
+    description: 'This site is situated a few hundred meters from the Islands by the sandy tongue that borders the north of the El-Qura bay. Napoleon Reef is best reached by boat or zodiac as it lies around 450 meters away from the beach. This huge madrepore tower is separated by a channel from the half-submerged reef: it comes up from a sandy seabed at around 20 meters depth and is frequented by plentiful fauna and some Napoleonfish (Cheilinus undulates) to whom this site owes its name.',
+    image: '<img src="https://redsea-diving.com/wp-content/uploads/2020/07/a1111.jpg">'
   },
   {
     point: [34.505997,28.477055],
@@ -58,9 +60,12 @@ divingData.forEach(function(d) {
 
   var html = `
   <div>
-    <h4>${d.name}</h4>
-    <div><i> ${d.title}</div>
-  </div>
+    <div><h4>${d.name}</h4>
+    <h5>${d.title}</h5>
+    <i> ${d.description} </i></div>
+    <div>
+    ${d.image}
+  </div>  </div>
   `
 
 new mapboxgl.Marker({
