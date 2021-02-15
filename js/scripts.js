@@ -57,7 +57,6 @@ var divingData = [
 
 
 divingData.forEach(function(d) {
-  console.log(d.name, d.point)
 
   var html =  `
     <div><h4>${d.name}</h4>
