@@ -55,17 +55,15 @@ var divingData = [
 ]
 
 
+
 divingData.forEach(function(d) {
   console.log(d.name, d.point)
 
-  var html = `
-  <div>
+  var html =  `
     <div><h4>${d.name}</h4>
     <h5>${d.title}</h5>
     <i> ${d.description} </i></div>
-    <div>
     ${d.image}
-  </div>  </div>
   `
 
 new mapboxgl.Marker({
