@@ -1,13 +1,12 @@
 body{
  font-family: sans-serif;
  background-color: #d6cfba;
- text-align: center;
 }
 
 h3 {
-font-size: 20px;
+font-size: 30px;
 word-spacing: 2px;
-
+font-weight: bold;
 }
 
 .container {
@@ -15,44 +14,38 @@ word-spacing: 2px;
   max-width: 1000px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-
-#description{
-  width: 49%;
-  height: 900px;
+.description{
+  width: 33%;
+  height: 700px;
   text-align: left;
-  color: red;
   font-family: sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 15px;
   margin: 0 auto;
   float: left;
+   overflow: hidden;
+   background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 #map {
-  width: 49%;
-  height: 900px;
+  width: 66%;
+  height: 700px;
   margin: 0 auto;
   float: right;
+}
+
+#sites {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('http://nesimaresort.com/wp-content/uploads/2016/02/THE-BELLS.jpg')
 }
 
 .mapboxgl-marker:hover {
   cursor: pointer;
 }
 
-
-.mapboxgl-popup {
-  max-width: 200px;
-}
-
 .mapboxgl-popup-content {
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  width:300px;
-  box-shadow: 3px 3px 2px #8B5D33;
 }
